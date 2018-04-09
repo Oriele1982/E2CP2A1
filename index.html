@@ -64,7 +64,7 @@
 			color: black;
 		}
 
-		.button-2{
+		.button.button-2{
 			background-color: #5CB85C;
 			margin-left: 10px;
 		}
@@ -78,20 +78,74 @@
 			text-align: center;
 			position: relative;
 			left: 410px;
-			padding-bottom: 40px;
 		}
 		
-		h4{
+		.parrafo{
+			padding-bottom: 50px;
+		}
+		h4{ 
+			padding-top: 50px;
 			text-align: center;
 			font-size: 14px;
 			margin-right: 30px;
 		}
 
 		.family{
-			width: 30%;
+			width: 20%;
 			position: relative;
-			left: 460px;
+			left: 520px;
 			top: 5px;
+		}
+
+		.button-3{
+			margin-left: 50px;
+		}
+
+		.contact{
+			width: 170px;
+			display: inline-block;
+			margin-left: 240px;
+			padding: 40px 0 40px 0;
+
+		}
+
+		.suscribe{
+			width: 400px;
+			display: inline-block;
+			position: relative;
+			left: 250px;
+			bottom: 40px;
+		}
+
+		input{
+			width: 250px;
+			border-radius: 3px;
+			border: 2px solid #DDDDDD;
+			padding: 7px;
+		}
+
+		.submit{
+			width: 70px;
+			border-radius: 3px;
+			border: 2px solid #DDDDDD;
+			background-color: #FFFFFF;
+			color: #000;
+			padding: 7px;
+		}
+
+		.submit:hover{
+			background-color: #337AB7;
+			color: #FFFFFF;
+		}
+		footer{
+			width: 100%;
+			background-color: #222222;
+			color: #FFFFFF;
+			padding: 10px;
+		}
+
+		h5{
+			margin-left: 125px;
 		}
 	</style>
 </head>
@@ -111,7 +165,7 @@
 			<button class="button button-2">Mas Info</button>
 		</div>
 		<div class="text-area">
-			<p>Hay una escasez gigante de desarrolladores en el mundo y más aún en Latinoamérica, se necesitan más desarrolladores y Tú puedes ser uno.</p>
+			<p class="parrafo">Hay una escasez gigante de desarrolladores en el mundo y más aún en Latinoamérica, se necesitan más desarrolladores y Tú puedes ser uno.</p>
 		</div>
 	</header>
 	<main>
@@ -123,34 +177,36 @@
 			<img src="images/viewing-gallery-for-happy-people.png" alt="" class="family">
 		</section>
 		<section>
-			<h4>SOLICITA INFORMACIÓN E INCRÍBETE</h4>
+			<h4>SOLICITA INFORMACIÓN E INSCRÍBETE</h4>
 			<div class="text-area">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum odio nisi beatae, aliquam quibusdam dignissimos eius laudantium sapiente fugiat a.</p>
 			</div>
-			<button class="button button-3">Incríbete!</button>
+			<div class="main">
+				<button class="button button-3">Inscríbete!</button>
+			</div>
 			<div class="text-area">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum odio nisi beatae, aliquam quibusdam dignissimos eius laudantium sapiente fugiat a.</p>
+				<p class="parrafo">Víve la experiencia Desafío Latam</p>
 			</div>
 		</section>
 		<section>
 			<div class="contact">
 				<h3>Contacto</h3>
 				<p><strong>Desafío Latam</strong> Ezequias Allende 2631 P:+56 9 5117 7975</p>
-				<p>inscripciones@desafiolatam.com</p>
+				<a href="inscripciones@desafiolatam.com">inscripciones@desafiolatam.com</a>
 			</div>
 			<div class="suscribe">
 				<h3>Suscribete</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 				<form  class="formulario" action="#">
 					<input type="text" placeholder="Ingresa tu email...">
-					<button type="submit">Enviar</button>
+					<button type="submit" class="submit">Enviar</button>
 				</form>
 			</div>
 		</section>
 	</main>
 	<footer>
 		<div>
-			<h5> DESAFIO LATAM 2018 - CURSO FRONT END G7</h5>
+			<h5> DESAFIOLATAM 2018 - CURSO FRONT END G7</h5>
 		</div>
 	</footer>
 </body>
