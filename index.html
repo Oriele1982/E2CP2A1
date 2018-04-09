@@ -5,156 +5,152 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Landing Page</title>
 	<link rel="stylesheet" href="">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"> 
 	<style>
 		body{
 			margin: 0;
-			font-family: 'Open Sans', sans-serif;
+			font-family: "Helvetica", sans-serif;
 		}
-		.fondo{
+
+		header{
 			background-image: url(images/bg.jpeg);
-			background-size: cover;
-			background-repeat: no-repeat;
+			width: 100%;
+			color: #FFFFFF;
 		}
-		.header li{
-			list-style-type: none;
+
+		nav ul li{
+			list-style: none;
 			display: inline-block;
-			position: relative;
-			bottom: 70px;
-			left: 700px;
-			color: #FFFFFF;
-			padding-left: 70px;
-			margin: 0;
 		}
-		.logo{
-			width: 300px;
-			margin:0;
-			padding: 50px 0 0 50px;
-		}
-		h1{
-			color: #FFFFFF;
-			text-align: center;
+		
+		ul{
 			margin: 0;
 		}
 		
-		.bluebutton{
-			width: 110px;
-			height: 40px;
-			background-color: #337AB7;
-			color: white;
-			text-align: center;
-			border-radius: 8%;
+		li{
 			display: inline-block;
-			padding-right: 30px;
 			position: relative;
-			top: 30px;
+			left: 588px;
+			padding-left: 20px;
+			font-size: 14px;
+		}
+
+		.logo{
+			width: 15%;
+			padding: 30px 30px 0 60px;
+			display: inline-block;
+		}
+
+		h1{
+			width: 485px;
+			font-weight: 300;
+			text-align: center;
+			position: relative;
+			left: 400px;
+			padding: 10px 0 10px 0;
+		}
+
+		.main .button{
+			text-align: center;
+			border-radius: 3px;
+			padding: 10px;
+			color: #FFFFFF;
+			background-color: #337AB7;
+			border-style: none;
+			position: relative;
 			left: 550px;
 		}
-		.greenbutton{
-			width: 110px;
-			height: 40px;
-			background-color: #56B154;
-			color: white;
-			border-radius: 8%;
-			display: inline-block;
-			position: relative;
-			top: 30px;
-			left: 570px;
+		.button:hover{
+			background-color: #A4A7A7;
+			color: black;
 		}
-		.white{
-			color: white;
+
+		.button-2{
+			background-color: #5CB85C;
+			margin-left: 10px;
+		}
+		section{
+			border-bottom: 2px solid #DDDDDD;
+
+		}
+		.text-area{
+			width: 480px;
+			font-size: 12px;
+			text-align: center;
+			position: relative;
+			left: 410px;
+			padding-bottom: 40px;
+		}
+		
+		h4{
 			text-align: center;
 			font-size: 14px;
-			padding: 40px 0 30px 0;
+			margin-right: 30px;
 		}
 
-		h5{
-			text-align: center;
-			margin: 0;
-			padding-top: 10px;
-		}
-		.texto{
-			width: 465px;
-			text-align: center;
-			padding-left: 450px;
-			padding-top: 10px;
-			font-size:12px;
-			margin: 0;
-		}
-		img{
-			width: 25%;
-			padding-left: 520px;
-		}
-
-		hr{
-			border: 1px solid #BFC9CA;
-			margin: 0;
-
-
-		}
-		.bluebutton2{
-			width: 70px;
-			height: 40px;
-			background-color: #337AB7;
-			color: white;
-			border-radius: 8%;
-			display: inline-block;
+		.family{
+			width: 30%;
 			position: relative;
-			padding: 5px;
-			bottom: 10px;
-			left: 640px;
+			left: 460px;
+			top: 5px;
 		}
 	</style>
 </head>
 <body>
 	<header>
-		<div class="fondo">
-			<div class="header">
-				<img src="images/latam_logo.png" class="logo" alt="">
-				<nav>
-					<ul>
-						<li>Equipo</li>
-						<li>Blog</li>
-						<li>Contacto</li>
-					</ul>
-				</nav>
-			</div>
-			<h1>COMIENZA UNA NUEVA VIDA Y <br> ÚNETE AL MUNDO <br> TECNOLÓGICO</h1>
-			<div class="buttons">
-				<input class="bluebutton" type="button" value="Comienza acá!!">
-				<input class="greenbutton" type="button" value="Más Info">
-			</div>
-			<p class="white">Hay una escasez gigante de desarrolladores en el mundo y más aún en Latinoamérica, se necesitan más <br> desarrolladores y Tú puedes ser uno.</p>
+		<nav>
+			<ul>
+				<img src="images/latam_logo.png" alt="" class="logo">
+				<li>Equipo</li>
+				<li>Blog</li>
+				<li>Contacto</li>
+			</ul>
+		</nav>
+		<h1>COMIENZA UNA NUEVA VIDA Y ÚNETE AL MUNDO TECNOLÓGICO</h1>
+		<div class="main">
+			<button class="button button-1">Comienza acá !!!</button>
+			<button class="button button-2">Mas Info</button>
+		</div>
+		<div class="text-area">
+			<p>Hay una escasez gigante de desarrolladores en el mundo y más aún en Latinoamérica, se necesitan más desarrolladores y Tú puedes ser uno.</p>
 		</div>
 	</header>
 	<main>
 		<section>
-			<h5>EL BOOTCAMP DE PROGRAMACIÓN MAS GRANDE DE LATINOAMÉRICA</h5>
-			<div class="texto">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia excepturi rem laborum, sequi harum labore non praesentium cumque.  </p>
-			</div>	
-			<img src="images/viewing-gallery-for-happy-people.png" alt="">
-			<hr>
+			<h4>EL BOOTCAMP DE PROGRAMACIÓN MAS GRANDE DE LATINOAMÉRICA</h4>
+			<div class="text-area">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum odio nisi beatae, aliquam quibusdam dignissimos eius laudantium sapiente fugiat a.</p>
+			</div>
+			<img src="images/viewing-gallery-for-happy-people.png" alt="" class="family">
 		</section>
 		<section>
-			<h5>SOLICITA INFORMACIÓN E INCRÍBETE</h5>
-			<div class="texto">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia excepturi rem laborum, sequi harum labore non praesentium cumque.  </p>
-			</div>	
-			<input class="bluebutton2" type="button" value="Inscríbete">
-			<p class="texto">Vive la experiencia Desafío Latam</p>
-		</section>
-		<section>
-			<div>
-				<h6>Contacto</h6>
-				
+			<h4>SOLICITA INFORMACIÓN E INCRÍBETE</h4>
+			<div class="text-area">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum odio nisi beatae, aliquam quibusdam dignissimos eius laudantium sapiente fugiat a.</p>
+			</div>
+			<button class="button button-3">Incríbete!</button>
+			<div class="text-area">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit earum odio nisi beatae, aliquam quibusdam dignissimos eius laudantium sapiente fugiat a.</p>
 			</div>
 		</section>
-		
+		<section>
+			<div class="contact">
+				<h3>Contacto</h3>
+				<p><strong>Desafío Latam</strong> Ezequias Allende 2631 P:+56 9 5117 7975</p>
+				<p>inscripciones@desafiolatam.com</p>
+			</div>
+			<div class="suscribe">
+				<h3>Suscribete</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				<form  class="formulario" action="#">
+					<input type="text" placeholder="Ingresa tu email...">
+					<button type="submit">Enviar</button>
+				</form>
+			</div>
+		</section>
 	</main>
 	<footer>
-		<div class="footer">
-			<h4> DESAFIO LATAM 2018 - G7</h4>
+		<div>
+			<h5> DESAFIO LATAM 2018 - CURSO FRONT END G7</h5>
 		</div>
 	</footer>
 </body>
